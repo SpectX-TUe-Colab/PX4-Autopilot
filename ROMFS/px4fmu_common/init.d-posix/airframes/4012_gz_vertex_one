@@ -5,7 +5,7 @@
 # @type Quadrotor
 #
 
-PX4_GZ_WORLD=${PX4_GZ_WORLD:=vertex}
+PX4_GZ_WORLD=${PX4_GZ_WORLD:=wind_turbine}
 PX4_SIM_MODEL=${PX4_SIM_MODEL:=vertex}
 
 . ${R}etc/init.d-posix/airframes/4001_gz_x500
