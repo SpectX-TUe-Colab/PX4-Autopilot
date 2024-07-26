@@ -78,8 +78,14 @@ if(gz-transport_FOUND)
 		${PX4_SOURCE_DIR}/Tools/simulation/gz/models/*
 	)
 
-	file(GLOB gz_worlds
-		${PX4_SOURCE_DIR}/Tools/simulation/gz/worlds/*.sdf
+	#file(GLOB gz_worlds
+	#	${PX4_SOURCE_DIR}/Tools/simulation/gz/worlds/*.sdf
+	#)
+
+
+	set(gz_worlds
+		default
+  		wind_turbine
 	)
 
 	# find corresponding airframes
