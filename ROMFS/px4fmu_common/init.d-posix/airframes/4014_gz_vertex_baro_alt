@@ -1,13 +1,15 @@
 #!/bin/sh
 #
-# @name Gazebo vertex
+# @name Gazebo vertex_baro_alt
 #
 # @type Quadrotor
 #
 
 PX4_GZ_WORLD=${PX4_GZ_WORLD:=wind_turbine}
-PX4_SIM_MODEL=${PX4_SIM_MODEL:=vertex}
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=vertex_baro_alt}
 
 param set-default COM_DISARM_PRFLT 0
+param set-default EKF2_GPS_CTRL 5
+param set-default EKF2_HGT_REF 0
 
 . ${R}etc/init.d-posix/airframes/4001_gz_x500

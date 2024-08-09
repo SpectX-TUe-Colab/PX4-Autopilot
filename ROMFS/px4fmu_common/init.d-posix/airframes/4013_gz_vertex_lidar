@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# @name Gazebo vertex
+# @name Gazebo vertex_lidar
 #
 # @type Quadrotor
 #
 
 PX4_GZ_WORLD=${PX4_GZ_WORLD:=wind_turbine}
-PX4_SIM_MODEL=${PX4_SIM_MODEL:=vertex}
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=vertex_lidar}
 
 param set-default COM_DISARM_PRFLT 0
 
