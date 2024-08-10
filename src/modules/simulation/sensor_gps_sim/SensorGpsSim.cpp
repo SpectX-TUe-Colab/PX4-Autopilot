@@ -120,9 +120,9 @@ void SensorGpsSim::Run()
 		Vector3f gps_vel;
 		if (_sim_gps_rtk.get()){
 			// RTK mode: reduce noise
-			latitude = gpos.lat + math::degrees((double)generate_wgn() * 0.05 / CONSTANTS_RADIUS_OF_EARTH);
-			longitude = gpos.lon + math::degrees((double)generate_wgn() * 0.05 / CONSTANTS_RADIUS_OF_EARTH);
-			altitude = gpos.alt + (generate_wgn() * 0.1f);
+			latitude = gpos.lat + math::degrees((double)generate_wgn() * 0.015 / CONSTANTS_RADIUS_OF_EARTH);
+			longitude = gpos.lon + math::degrees((double)generate_wgn() * 0.015 / CONSTANTS_RADIUS_OF_EARTH);
+			altitude = gpos.alt + (generate_wgn() * 0.03f);
 			gps_vel = Vector3f{lpos.vx, lpos.vy, lpos.vz} + noiseGauss3f(0.01f, 0.01f, 0.02f);
 		} else {
 			// Non-RTK mode: keep default noise levels
