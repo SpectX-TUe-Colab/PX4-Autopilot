@@ -80,6 +80,8 @@ px4_add_romfs_files(
 	4012_gz_vertex
 	4013_gz_vertex_lidar
 	4014_gz_vertex_baro_alt
+	4015_gz_vertex_baro_alt_rtk
+	4016_gz_vertex_rtk
 
 	6011_gazebo-classic_typhoon_h480
 	6011_gazebo-classic_typhoon_h480.post
