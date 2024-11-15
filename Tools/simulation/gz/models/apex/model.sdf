@@ -2,87 +2,140 @@
   <model name='apex'>
     <link name='base_link'>
       <inertial>
-        <pose>-4.0817022964160168e-18 -2.040851148208008e-18 0.08158088235294117 0 0 0</pose>
-        <mass>13.6</mass>
+        <pose>3.8021336459765633e-18 1.9010668229882809e-18 -0.078047945205479446 0 0 0</pose>
+        <mass>14.6</mass>
         <inertia>
-          <ixx>1.0443260110294119</ixx>
-          <ixy>2.0816681711721691e-17</ixy>
-          <ixz>-2.7939252218967631e-18</ixz>
-          <iyy>1.0443260110294119</iyy>
-          <iyz>-2.2643243489367851e-18</iyz>
-          <izz>1.199675</izz>
+          <ixx>0.66679253877643629</ixx>
+          <ixy>-5.7811611079981693e-05</ixy>
+          <ixz>0.0001125763919399972</ixz>
+          <iyy>0.62684588709979616</iyy>
+          <iyz>-7.6852716500013487e-06</iyz>
+          <izz>0.80883708094223006</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__body_link_collision'>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 -0.012699999999999999 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_core_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.13500000000000001</length>
+            <radius>0.17649999999999999</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__arm_0_collision_1'>
-        <pose>0 0 0 0 0 0</pose>
+      <collision name='base_link_fixed_joint_lump__body_link_collision_1'>
+        <pose>0 0.27300000000000002 -0.5212 0 1.5707963267948966 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_arm_1_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.58599999999999997</length>
+            <radius>0.016</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__arm_1_collision_2'>
-        <pose>0 0 0 0 0 1.0471975511965981</pose>
+      <collision name='base_link_fixed_joint_lump__body_link_collision_2'>
+        <pose>0.065000000000000002 -0.18433099999999999 -0.27758500000000003 -0.3490658503988659 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_arm_2_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.01</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__arm_2_collision_3'>
-        <pose>0 0 0 0 0 2.0943951023931948</pose>
+      <collision name='base_link_fixed_joint_lump__body_link_collision_3'>
+        <pose>-0.065000000000000002 -0.18433099999999999 -0.27758500000000003 -0.3490658503988659 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_arm_2_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.01</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__arm_3_collision_4'>
-        <pose>0 0 0 0 0 3.1415926535897931</pose>
+      <collision name='base_link_fixed_joint_lump__body_link_collision_4'>
+        <pose>0 -0.27300000000000002 -0.5212 0 1.5707963267948966 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_arm_1_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.58599999999999997</length>
+            <radius>0.016</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__arm_4_collision_5'>
-        <pose>0 0 0 0 0 -2.0943951023931962</pose>
+      <collision name='base_link_fixed_joint_lump__body_link_collision_5'>
+        <pose>0.065000000000000002 0.18433099999999999 -0.27758500000000003 0.3490658503988659 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_arm_2_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.01</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__arm_5_collision_6'>
-        <pose>0 0 0 0 0 -1.0471975511965981</pose>
+      <collision name='base_link_fixed_joint_lump__body_link_collision_6'>
+        <pose>-0.065000000000000002 0.18433099999999999 -0.27758500000000003 0.3490658503988659 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_arm_2_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.01</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__battery_link_collision_7'>
-        <pose>0 0 0 0 0 0</pose>
+      <collision name='base_link_fixed_joint_lump__arm_0_collision_7'>
+        <pose>0 0.51600000000000001 -0.029999999999999999 1.5707963267948959 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_battery_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.69999999999999996</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__arm_1_collision_8'>
+        <pose>-0.44686910835277027 0.25800000000000012 -0.029999999999999999 1.570796326794897 5.5511151231257827e-17 1.0471975511965981</pose>
+        <geometry>
+          <cylinder>
+            <length>0.69999999999999996</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__arm_2_collision_9'>
+        <pose>-0.44686910835277038 -0.2579999999999999 -0.029999999999999999 1.5707963267948972 0 2.0943951023931948</pose>
+        <geometry>
+          <cylinder>
+            <length>0.69999999999999996</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__arm_3_collision_10'>
+        <pose>-6.3191774836003421e-17 -0.51600000000000001 -0.029999999999999999 1.5707963267948959 0 3.1415926535897931</pose>
+        <geometry>
+          <cylinder>
+            <length>0.69999999999999996</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__arm_4_collision_11'>
+        <pose>0.44686910835277027 -0.25800000000000028 -0.029999999999999999 1.5707963267948957 5.5511151231257827e-17 -2.0943951023931962</pose>
+        <geometry>
+          <cylinder>
+            <length>0.69999999999999996</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__arm_5_collision_12'>
+        <pose>0.44686910835277027 0.25800000000000012 -0.029999999999999999 1.570796326794897 -5.5511151231257827e-17 -1.0471975511965981</pose>
+        <geometry>
+          <cylinder>
+            <length>0.69999999999999996</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__battery_link_collision_13'>
+        <pose>0 0 -0.14319999999999999 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.23699999999999999 0.17199999999999999 0.11600000000000001</size>
+          </box>
         </geometry>
       </collision>
       <visual name='base_link_fixed_joint_lump__body_link_visual'>
@@ -296,24 +349,24 @@
     <link name='rotor_0'>
       <pose relative_to='rotor_0_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.82289999999999996 0.012 0 0 0</pose>
+        <pose>0 0 0.00099999999999999915 0 0 0</pose>
         <mass>1.1000000000000001</mass>
         <inertia>
-          <ixx>0.10000000000000001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.10000000000000001</iyy>
-          <iyz>0</iyz>
-          <izz>0.10000000000000001</izz>
+          <ixx>0.0038293255315799998</ixx>
+          <ixy>-0.00012384252740999999</ixy>
+          <ixz>2.1895e-10</ixz>
+          <iyy>0.00037573441417000002</iyy>
+          <iyz>-1.0796700000000001e-09</iyz>
+          <izz>0.0039646867139900002</izz>
         </inertia>
       </inertial>
       <collision name='rotor_0_collision'>
-        <pose>0 0.82289999999999996 0.012999999999999999 0 0 0</pose>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_propeller_ccw_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.029000000000000001</length>
+            <radius>0.38800000000000001</radius>
+          </cylinder>
         </geometry>
       </collision>
       <visual name='rotor_0_visual'>
@@ -349,24 +402,24 @@
     <link name='rotor_1'>
       <pose relative_to='rotor_1_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.82289999999999996 0.012 0 0 0</pose>
+        <pose>0 0 0.00099999999999999915 0 0 0</pose>
         <mass>1.1000000000000001</mass>
         <inertia>
-          <ixx>0.10000000000000001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.10000000000000001</iyy>
-          <iyz>0</iyz>
-          <izz>0.10000000000000001</izz>
+          <ixx>0.0038283295721699999</ixx>
+          <ixy>0.0001239599229</ixy>
+          <ixz>4.6767699999999998e-09</ixz>
+          <iyy>0.00037310546281</iyy>
+          <iyz>-7.8008489999999997e-08</iyz>
+          <izz>0.0039663659791299996</izz>
         </inertia>
       </inertial>
       <collision name='rotor_1_collision'>
-        <pose>0 0.82289999999999996 0.012999999999999999 0 0 0</pose>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_propeller_cw_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.029000000000000001</length>
+            <radius>0.38800000000000001</radius>
+          </cylinder>
         </geometry>
       </collision>
       <visual name='rotor_1_visual'>
@@ -402,24 +455,24 @@
     <link name='rotor_2'>
       <pose relative_to='rotor_2_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.82289999999999996 0.012 0 0 0</pose>
+        <pose>0 0 0.00099999999999999915 0 0 0</pose>
         <mass>1.1000000000000001</mass>
         <inertia>
-          <ixx>0.10000000000000001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.10000000000000001</iyy>
-          <iyz>0</iyz>
-          <izz>0.10000000000000001</izz>
+          <ixx>0.0038293255315799998</ixx>
+          <ixy>-0.00012384252740999999</ixy>
+          <ixz>2.1895e-10</ixz>
+          <iyy>0.00037573441417000002</iyy>
+          <iyz>-1.0796700000000001e-09</iyz>
+          <izz>0.0039646867139900002</izz>
         </inertia>
       </inertial>
       <collision name='rotor_2_collision'>
-        <pose>0 0.82289999999999996 0.012999999999999999 0 0 0</pose>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_propeller_ccw_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.029000000000000001</length>
+            <radius>0.38800000000000001</radius>
+          </cylinder>
         </geometry>
       </collision>
       <visual name='rotor_2_visual'>
@@ -455,24 +508,24 @@
     <link name='rotor_3'>
       <pose relative_to='rotor_3_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.82289999999999996 0.012 0 0 0</pose>
+        <pose>0 0 0.00099999999999999915 0 0 0</pose>
         <mass>1.1000000000000001</mass>
         <inertia>
-          <ixx>0.10000000000000001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.10000000000000001</iyy>
-          <iyz>0</iyz>
-          <izz>0.10000000000000001</izz>
+          <ixx>0.0038283295721699999</ixx>
+          <ixy>0.0001239599229</ixy>
+          <ixz>4.6767699999999998e-09</ixz>
+          <iyy>0.00037310546281</iyy>
+          <iyz>-7.8008489999999997e-08</iyz>
+          <izz>0.0039663659791299996</izz>
         </inertia>
       </inertial>
       <collision name='rotor_3_collision'>
-        <pose>0 0.82289999999999996 0.012999999999999999 0 0 0</pose>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_propeller_cw_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.029000000000000001</length>
+            <radius>0.38800000000000001</radius>
+          </cylinder>
         </geometry>
       </collision>
       <visual name='rotor_3_visual'>
@@ -508,24 +561,24 @@
     <link name='rotor_4'>
       <pose relative_to='rotor_4_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.82289999999999996 0.012 0 0 0</pose>
+        <pose>0 0 0.00099999999999999915 0 0 0</pose>
         <mass>1.1000000000000001</mass>
         <inertia>
-          <ixx>0.10000000000000001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.10000000000000001</iyy>
-          <iyz>0</iyz>
-          <izz>0.10000000000000001</izz>
+          <ixx>0.0038293255315799998</ixx>
+          <ixy>-0.00012384252740999999</ixy>
+          <ixz>2.1895e-10</ixz>
+          <iyy>0.00037573441417000002</iyy>
+          <iyz>-1.0796700000000001e-09</iyz>
+          <izz>0.0039646867139900002</izz>
         </inertia>
       </inertial>
       <collision name='rotor_4_collision'>
-        <pose>0 0.82289999999999996 0.012999999999999999 0 0 0</pose>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_propeller_ccw_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.029000000000000001</length>
+            <radius>0.38800000000000001</radius>
+          </cylinder>
         </geometry>
       </collision>
       <visual name='rotor_4_visual'>
@@ -561,24 +614,24 @@
     <link name='rotor_5'>
       <pose relative_to='rotor_5_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.82289999999999996 0.012 0 0 0</pose>
+        <pose>0 0 0.00099999999999999915 0 0 0</pose>
         <mass>1.1000000000000001</mass>
         <inertia>
-          <ixx>0.10000000000000001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.10000000000000001</iyy>
-          <iyz>0</iyz>
-          <izz>0.10000000000000001</izz>
+          <ixx>0.0038283295721699999</ixx>
+          <ixy>0.0001239599229</ixy>
+          <ixz>4.6767699999999998e-09</ixz>
+          <iyy>0.00037310546281</iyy>
+          <iyz>-7.8008489999999997e-08</iyz>
+          <izz>0.0039663659791299996</izz>
         </inertia>
       </inertial>
       <collision name='rotor_5_collision'>
-        <pose>0 0.82289999999999996 0.012999999999999999 0 0 0</pose>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://apex/meshes/apex_propeller_cw_mesh.stl</uri>
-          </mesh>
+          <cylinder>
+            <length>0.029000000000000001</length>
+            <radius>0.38800000000000001</radius>
+          </cylinder>
         </geometry>
       </collision>
       <visual name='rotor_5_visual'>
@@ -602,8 +655,8 @@
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>1000.0</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.016</momentConstant>
+      <motorConstant>8.54858e-05</motorConstant>
+      <momentConstant>0.16</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>0</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
@@ -618,8 +671,8 @@
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>1000.0</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.016</momentConstant>
+      <motorConstant>8.54858e-05</motorConstant>
+      <momentConstant>0.16</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>1</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
@@ -634,8 +687,8 @@
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>1000.0</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.016</momentConstant>
+      <motorConstant>8.54858e-05</motorConstant>
+      <momentConstant>0.16</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>2</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
@@ -650,8 +703,8 @@
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>1000.0</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.016</momentConstant>
+      <motorConstant>8.54858e-05</motorConstant>
+      <momentConstant>0.16</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>3</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
@@ -666,8 +719,8 @@
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>1000.0</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.016</momentConstant>
+      <motorConstant>8.54858e-05</motorConstant>
+      <momentConstant>0.16</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>4</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
@@ -682,8 +735,8 @@
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>1000.0</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.016</momentConstant>
+      <motorConstant>8.54858e-05</motorConstant>
+      <momentConstant>0.16</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>5</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
@@ -703,76 +756,40 @@
       <dimensions>3</dimensions>
       <gaussian_noise>0</gaussian_noise>
     </plugin>
-    <frame name='arm_0_fix' attached_to='arm_0_base'>
+    <frame name='arm_0_fix' attached_to='body_link'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
     <frame name='arm_0' attached_to='arm_0_fix'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
-    <frame name='arm_0_base_fix' attached_to='body_link'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_0_base' attached_to='arm_0_base_fix'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_1_fix' attached_to='arm_1_base'>
-      <pose>0 0 0 0 0 0</pose>
+    <frame name='arm_1_fix' attached_to='body_link'>
+      <pose>0 0 0 0 0 1.0471975511965981</pose>
     </frame>
     <frame name='arm_1' attached_to='arm_1_fix'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
-    <frame name='arm_1_base_fix' attached_to='body_link'>
-      <pose>0 0 0 0 0 1.0471975511965981</pose>
-    </frame>
-    <frame name='arm_1_base' attached_to='arm_1_base_fix'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_2_fix' attached_to='arm_2_base'>
-      <pose>0 0 0 0 0 0</pose>
+    <frame name='arm_2_fix' attached_to='body_link'>
+      <pose>0 0 0 0 0 2.0943951023931948</pose>
     </frame>
     <frame name='arm_2' attached_to='arm_2_fix'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
-    <frame name='arm_2_base_fix' attached_to='body_link'>
-      <pose>0 0 0 0 0 2.0943951023931948</pose>
-    </frame>
-    <frame name='arm_2_base' attached_to='arm_2_base_fix'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_3_fix' attached_to='arm_3_base'>
-      <pose>0 0 0 0 0 0</pose>
+    <frame name='arm_3_fix' attached_to='body_link'>
+      <pose>0 0 0 0 0 3.1415926535897931</pose>
     </frame>
     <frame name='arm_3' attached_to='arm_3_fix'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
-    <frame name='arm_3_base_fix' attached_to='body_link'>
-      <pose>0 0 0 0 0 3.1415926535897931</pose>
-    </frame>
-    <frame name='arm_3_base' attached_to='arm_3_base_fix'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_4_fix' attached_to='arm_4_base'>
-      <pose>0 0 0 0 0 0</pose>
+    <frame name='arm_4_fix' attached_to='body_link'>
+      <pose>0 0 0 0 0 -2.0943951023931962</pose>
     </frame>
     <frame name='arm_4' attached_to='arm_4_fix'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
-    <frame name='arm_4_base_fix' attached_to='body_link'>
-      <pose>0 0 0 0 0 -2.0943951023931962</pose>
-    </frame>
-    <frame name='arm_4_base' attached_to='arm_4_base_fix'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_5_fix' attached_to='arm_5_base'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_5' attached_to='arm_5_fix'>
-      <pose>0 0 0 0 0 0</pose>
-    </frame>
-    <frame name='arm_5_base_fix' attached_to='body_link'>
+    <frame name='arm_5_fix' attached_to='body_link'>
       <pose>0 0 0 0 0 -1.0471975511965981</pose>
     </frame>
-    <frame name='arm_5_base' attached_to='arm_5_base_fix'>
+    <frame name='arm_5' attached_to='arm_5_fix'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
     <frame name='battery_fix' attached_to='body_link'>
