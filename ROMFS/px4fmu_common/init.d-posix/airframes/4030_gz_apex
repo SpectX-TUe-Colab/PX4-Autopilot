@@ -68,4 +68,4 @@ param set-default SIM_GZ_EC_MAX5 1000
 param set-default SIM_GZ_EC_MAX6 1000
 
 param set-default MPC_THR_HOVER 1.60
-param set-default NAV_DLL_ACT 2
+param set-default NAV_DLL_ACT 0
