@@ -1748,10 +1748,18 @@ MavlinkReceiver::handle_message_battery_status(mavlink_message_t *msg)
 	battery_status.voltage_filtered_v  = voltage_sum;
 	battery_status.current_a = (float)(battery_mavlink.current_battery) / 100.0f;
 	battery_status.current_filtered_a = battery_status.current_a;
-	battery_status.remaining = (float)battery_mavlink.battery_remaining / 100.0f;
+	battery_status.remaining = battery_mavlink.battery_remaining >= 0
+				   ? (float)battery_mavlink.battery_remaining / 100.0f
+				   : NAN;
 	battery_status.discharged_mah = (float)battery_mavlink.current_consumed;
+	battery_status.time_remaining_s = battery_mavlink.time_remaining > 0
+					  ? (float)battery_mavlink.time_remaining
+					  : NAN;
 	battery_status.cell_count = cell_count;
-	battery_status.temperature = (float)battery_mavlink.temperature;
+	battery_status.temperature = battery_mavlink.temperature == INT16_MAX
+				     ? NAN
+				     : (float)battery_mavlink.temperature / 100.0f;
+	battery_status.source = battery_status_s::BATTERY_SOURCE_EXTERNAL;
 	battery_status.connected = true;
 
 	// Set the battery warning based on remaining charge.
@@ -2343,7 +2351,7 @@ MavlinkReceiver::handle_message_hil_sensor(mavlink_message_t *msg)
 	}
 
 	// battery status
-	{
+	if (_param_bat1_source.get() != battery_status_s::BATTERY_SOURCE_EXTERNAL) {
 		battery_status_s hil_battery_status{};
 
 		hil_battery_status.timestamp = timestamp;
@@ -2699,7 +2707,7 @@ MavlinkReceiver::handle_message_hil_state_quaternion(mavlink_message_t *msg)
 	}
 
 	/* battery status */
-	{
+	if (_param_bat1_source.get() != battery_status_s::BATTERY_SOURCE_EXTERNAL) {
 		battery_status_s hil_battery_status{};
 		hil_battery_status.voltage_v = 11.1f;
 		hil_battery_status.voltage_filtered_v = 11.1f;
