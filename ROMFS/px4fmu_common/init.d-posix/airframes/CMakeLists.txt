@@ -107,4 +107,5 @@ px4_add_romfs_files(
 	17002_flightgear_tf-g2
 
 	# [22000, 22999] Reserve for custom models
+	22001_none_airside_iris
 )
